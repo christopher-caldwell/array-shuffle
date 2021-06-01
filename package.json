@@ -1,14 +1,13 @@
 {
-  "name": "@caldwell619/ms",
-  "version": "0.0.3",
-  "description": "Tiny time formatting utility forked from vercel/ms",
+  "name": "@caldwell619/array-shuffle",
+  "version": "0.0.1",
+  "description": "Dead simple array shuffling",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "source": "src/index.ts",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint ./ --ext .js,.ts",
-    "benchmark:ms": "ts-node benchmark/index.ts",
     "test": "jest",
     "type-check": "tsc --noEmit",
     "build": "microbundle --compress --target node",
@@ -18,20 +17,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:christopher-caldwell/ms.git"
+    "url": "git@github.com:christopher-caldwell/array-shuffle.git"
   },
   "bugs": {
-    "url": "https://github.com/christopher-caldwell/ms/issues"
+    "url": "https://github.com/christopher-caldwell/array-shuffle/issues"
   },
   "files": [
     "dist"
   ],
   "keywords": [
-    "time",
-    "conversion",
-    "seconds",
-    "weeks",
-    "date"
+    "array",
+    "shuffle",
+    "random"
   ],
   "author": "u/christopher-caldwell",
   "license": "MIT",
@@ -47,7 +44,6 @@
     "prettier": "^2.0.5",
     "standard-version": "^9.1.1",
     "ts-jest": "26.5.6",
-    "ts-node": "9.1.1",
     "typescript": "^4.1.5"
   }
 }
