@@ -34,3 +34,19 @@ import { shuffle } from '@caldwell619/array-shuffle'
 
 const shuffledArray = shuffle([1, 2, 3]) // [3,2,1] or [2,1,3] or [3,1,2]
 ```
+
+## Options
+
+Due to RNG, small sets have the potential to be in the same order as the returned "shuffled" set.
+
+An optional "options" object is available as the second argument, with just one key.
+
+### Ensuring Unique Return
+
+```ts
+import { shuffle } from '@caldwell619/array-shuffle'
+
+const shuffledArray = shuffle([1, 2, 3], { shouldEnsureUnique: true }) // [3,2,1] or [2,1,3] or [3,1,2]
+```
+
+Providing this flag will never return the same set. This adds a small amount of computation of course, so it **is false by default**.
